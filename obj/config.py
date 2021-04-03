@@ -1,11 +1,11 @@
-from state import *
+from obj.state import *
 
 class Config:
 	
 	def __init__(self,d=None):
 		self.d = defaultdict(complex) # defaultdict
 		if d is not None:
-			self.d = self.d.union({d})
+			self.d[d] = 1
 
 	def items(self):
 		return self.d.items()

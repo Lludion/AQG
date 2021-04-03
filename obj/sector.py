@@ -17,3 +17,5 @@ class Sector:
 		self.xi = xi # data in
 		self.xo = xo # data out
 
+	def __repr__(self):
+		return str(self.adr)

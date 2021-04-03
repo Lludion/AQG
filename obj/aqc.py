@@ -1,5 +1,5 @@
-from skeleton import *
-from config import *
+from obj.skeleton import *
+from obj.config import *
 
 class AQC:
 
@@ -15,4 +15,5 @@ class AQC:
 				nconf[ns] += beta
 		self.e = nconf
 
-
+	def __repr__(self):
+		return str("AQC\n") + str(self.s) + "\n" + str(self.e)
